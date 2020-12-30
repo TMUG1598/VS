@@ -1,0 +1,128 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background: #ECF3F5;
+    background-image: url(/assets/img/bg.png);
+    background-size: cover;
+    color: #01132B;
+}
+
+a, p {
+    margin: 0;
+    padding: 0;
+}
+
+#bgdiag1, #bgdiag2, #bgdiag3 {
+    position: absolute;
+    width: 330px;
+    height: 2940px;
+    background: #DAE7F0;
+    box-shadow: 0px 0px 40px 30px #DAE7F0;
+    transform: rotate(-20.75deg);
+}
+
+#bgdiag1 {
+    left: 1257px;
+    top: -226.21px;
+}
+
+#bgdiag2 {
+    left: 577px;
+    top: -93.21px;
+}
+
+#bgdiag3 {
+    left: -127px;
+    top: -79.21px;
+}
+
+.mainNav {
+    background-color: #ECF3F5;
+}
+
+a.nav-link .active {
+    color: #01132B !important;
+}
+
+.cover {
+    min-height: 90vh;
+}
+
+.logo {
+    max-width: 450px;
+}
+
+.motto {
+    font-family: 'Changa', sans-serif;
+    font-size: 30px;
+}
+
+.subtitle {
+    max-width: 700px;
+    font-family: 'Assistant', sans-serif;
+    font-size: 18px;
+}
+
+.header {
+    font-family: 'Assistant', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.headerSmall {
+    font-family: 'Assistant', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p.instructor {
+    text-align: left;
+    font-size: small;
+}
+
+button.moreProg {
+    font-family: 'Bebas Neue', cursive;
+    background-color: #01132B;
+    color: #FFB84E;
+    font-size: x-large;
+    max-width: 300px;
+    text-decoration: underline;
+}
+
+.team img {
+    max-width: 14rem;
+    border-radius: 50%;
+}
+
+.name {
+    font-family: 'Assistant', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.description {
+    font-family: 'Assistant', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+i {
+    font-size: 30px;
+    color: #01132B;
+}
+
+.footer {
+    background-color: #01132B;
+}
+
+.footer .nav-link {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    color: #FFB84E !important;
+}
+
+/* font-family: 'Assistant', sans-serif;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Changa', sans-serif;
+font-family: 'Passion One', cursive;
+font-family: 'Permanent Marker', cursive; */
