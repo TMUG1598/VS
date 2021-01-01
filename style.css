@@ -12,7 +12,7 @@ a, p {
     padding: 0;
 }
 
-#bgdiag1, #bgdiag2, #bgdiag3 {
+/* #bgdiag1, #bgdiag2, #bgdiag3 {
     position: absolute;
     width: 330px;
     height: 2940px;
@@ -34,7 +34,7 @@ a, p {
 #bgdiag3 {
     left: -127px;
     top: -79.21px;
-}
+} */
 
 .mainNav {
     background-color: #ECF3F5;
@@ -119,6 +119,11 @@ i {
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
     color: #FFB84E !important;
+}
+
+p.text {
+    font-size: 16px;
+    font-family: 'Assistant', sans-serif;
 }
 
 /* font-family: 'Assistant', sans-serif;
