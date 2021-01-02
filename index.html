@@ -60,47 +60,7 @@
             <p class="p-3 header">MEET THE TEAM</p>
             <p class="p-4 subtitle">We are a team of fun-loving, innovative, passionate, and creative individuals with
                 only one goal: Help you Make the Switch.</p>
-            <div class="w-75 team d-flex flex-wrap justify-content-center">
-                <div class="m-2 d-flex flex-column">
-                    <img src="assets/img/VSr Team Photos/Ysabelle David.jpg" alt="">
-                    <p class="mt-2 name">Ysabelle David</p>
-                    <p class="description">CEO & COO</p>
-                </div>
-                <div class="m-2 d-flex flex-column">
-                    <img src="assets/img/VSr Team Photos/Junny Cerdeña.jpg" alt="">
-                    <p class="mt-2 name">Junny Cerdeña</p>
-                    <p class="description">President</p>
-                </div>
-                <div class="m-2 d-flex flex-column">
-                    <img src="assets/img/VSr Team Photos/Jan Rey Cerdeña.jpg" alt="">
-                    <p class="mt-2 name">Jan Rey Cerdeña</p>
-                    <p class="description">Graphic Designer</p>
-                </div>
-                <div class="m-2 d-flex flex-column">
-                    <img src="assets/img/VSr Team Photos/Tatyana Gonzaga.JPG" alt="">
-                    <p class="mt-2 name">Tatyana Gonzaga</p>
-                    <p class="description">Web Developer</p>
-                </div>
-                <div class="m-2 d-flex flex-column">
-                    <img src="assets/img/VSr Team Photos/Maki Kishore.jpg" alt="">
-                    <p class="mt-2 name">Maki Kishore</p>
-                    <p class="description">Customer Support</p>
-                </div>
-                <div class="m-2 d-flex flex-column">
-                    <img src="assets/img/VSr Team Photos/Stef Arellano-Rañosa.jpg" alt="">
-                    <p class="mt-2 name">Stef Arellano-Rañosa</p>
-                    <p class="description">Ads Specialist</p>
-                </div>
-                <div class="m-2 d-flex flex-column">
-                    <img src="assets/img/VSr Team Photos/Ja Casanova-Garrido.jpg" alt="">
-                    <p class="mt-2 name">Ja Casanova-Garrido</p>
-                    <p class="description">SEO Specialist</p>
-                </div>
-                <div class="m-2 d-flex flex-column">
-                    <img src="assets/img/VSr Team Photos/RJ Garrido.jpg" alt="">
-                    <p class="mt-2 name">RJ Garrido</p>
-                    <p class="description">Video Editor</p>
-                </div>
+            <div id="teamList" class="w-75 team d-flex flex-wrap justify-content-center">
             </div>
         </div>
         <div class="pt-5 row d-flex flex-column justify-content-center align-items-center text-center">
@@ -128,11 +88,13 @@
         </div>
     </nav>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="info.js"></script>
+    <script src="programs.js"></script>
+    <script src="team.js"></script>
     <script src="script.js"></script>
     <script>
         window.onload = () => {
             progsOnHome();
+            fullTeam();
         }
     </script>
 </body>

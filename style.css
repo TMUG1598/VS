@@ -126,6 +126,10 @@ p.text {
     font-family: 'Assistant', sans-serif;
 }
 
+.card-footer {
+    background-color: #ECF3F5 !important;
+}
+
 /* font-family: 'Assistant', sans-serif;
 font-family: 'Bebas Neue', cursive;
 font-family: 'Changa', sans-serif;
