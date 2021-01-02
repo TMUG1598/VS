@@ -85,13 +85,3 @@ const fullTeam = () => {
     });
     document.getElementById('teamList').innerHTML = html;
 }
-
-// const showInfo = (index) => {
-//     let html = 
-//     `<div class="m-3 card" style="max-width: 10rem; position: absolute; z-index: 10;">
-//         <div class="card-body">
-//             <h2 class="m-3 card-title">${index.name}</h2>
-//         </div>
-//     </div>`;
-//     return html;
-// }
