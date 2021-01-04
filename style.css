@@ -80,6 +80,10 @@ p.instructor {
     font-size: small;
 }
 
+p.sub {
+    font-size: medium;
+}
+
 button.moreProg {
     font-family: 'Bebas Neue', cursive;
     background-color: #01132B;
