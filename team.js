@@ -10,9 +10,9 @@ var team = [
             {'in': 'http://www.linkedin.com/in/ysabellerdavid'},
         ],
         'site': 'https://www.ysabelledavid.com',
-        'description': `Writer by passion, VA by choice. <br><br>
-        Aspiring Philanthropist. <br><br>
-        My favorite line is: "Ignorance is bliss" as it has so many levels. That kind of bliss is not what I want to have so I never stop wanting to learn and grow then share all the things I know will help others too.`,
+        'description': `Writer by passion🖊️  VA and nerd by choice. 🤓 <br>
+        Aspiring Philanthropist and extremely organized. Made the switch ⚡ 2 years ago.<br>
+        I also have a Monkey companion in life. 🐒`,
     },
     {
         'name': 'Junny Cerdeña',
