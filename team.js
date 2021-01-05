@@ -73,7 +73,7 @@ var team = [
         'image': 'assets/img/VSr Team Photos/Tatyana Gonzaga.JPG',
         'socials': [
             {'fb': ''},
-            {'ig': 'https://www.facebook.com/janine.casanova'},
+            {'ig': 'https://www.instagram.com/tatyana.gonzaga/'},
             {'in': ''},
         ],
         'site': 'https://www.linkedin.com/in/tatyanagonzaga/',
@@ -85,7 +85,7 @@ var team = [
         'teacher': 'False',
         'image': 'assets/img/VSr Team Photos/RJ Garrido.jpg',
         'socials': [
-            {'fb': 'https://www.facebook.com/janine.casanova'},
+            {'fb': 'https://www.facebook.com/arjae.garrido'},
             {'ig': ''},
             {'in': ''},
         ],
@@ -100,7 +100,7 @@ var team = [
         'socials': [
             {'fb': ''},
             {'ig': ''},
-            {'in': 'https://www.facebook.com/janine.casanova'},
+            {'in': 'https://www.linkedin.com/in/janrey-cerdena/'},
         ],
         'site': 'https://www.linkedin.com/in/janrey-cerdena/',
         'description': `Designer. Looking forward to do more gaming and streaming related designs in the future. I like good music and playing video games with friends.`,
