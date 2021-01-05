@@ -77,7 +77,7 @@ a.nav-link .active {
 
 p.instructor {
     text-align: left;
-    font-size: small;
+    font-size: smaller;
 }
 
 p.sub {
@@ -104,14 +104,31 @@ button.moreProg {
     font-weight: 600;
 }
 
-.description {
+.role {
     font-family: 'Assistant', sans-serif;
     font-size: 15px;
     font-weight: 400;
 }
 
-i {
+.description {
+    font-family: 'Assistant', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.personalSite {
+    font-family: 'Assistant', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+#contact i, i.fa-home {
     font-size: 30px;
+    color: #01132B;
+}
+
+.socials i {
+    font-size: 20px;
     color: #01132B;
 }
 
@@ -132,6 +149,10 @@ p.text {
 
 .card-footer {
     background-color: #ECF3F5 !important;
+}
+
+.errorText {
+    font-family: 'Passion One', cursive;
 }
 
 /* font-family: 'Assistant', sans-serif;
