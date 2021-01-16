@@ -19,12 +19,14 @@ const fullPrograms = () => {
     let html = '';
     programs.forEach(index => {
         html += `
-        <div class="m-3 card" style="max-width: 25rem;" onclick="location.href='${index.page}'">
-            <div class="card-body text-center">
-                <h5 class="card-title">${index.title}</h5>
-                <p class="mt-3 instructor text-center">${index.instructor}</p>
+        <div>
+            <div class="m-3 card" style="max-width: 30rem;" onclick="location.href='${index.page}'">
+                <div class="card-body text-center">
+                    <h5 class="card-title">${index.title}</h5>
+                    <p class="mt-3 instructor text-center">${index.instructor}</p>
+                </div>
+                <img src="${index.image}" class="card-img" alt="">
             </div>
-            <img src="${index.image}" class="card-img" alt="">
         </div>`
     });
     document.getElementById('fullPrograms').innerHTML = html;
