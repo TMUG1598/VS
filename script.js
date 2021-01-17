@@ -2,29 +2,35 @@
 
 const progsOnHome = () => {
     let html = '';
+    let delay = 500;
     for (let index = 0; index < 4; index++) {
         html += `
-        <div class="m-4 card" style="max-width: 25rem;" onclick="location.href='${programs[index].page}'">
+        <div class="m-4 card hoverCard" data-aos="fade-up" data-aos-delay="${delay}" style="max-width: 25rem;" onclick="location.href='${programs[index].page}'
+        ">
             <img src="${programs[index].image}" class="card-img-top" alt="">
             <div class="card-body text-center">
                 <h5 class="card-title">${programs[index].title}</h5>
                 <p class="mt-3 instructor">${programs[index].instructor}</p>
             </div>
         </div>`
+        delay += 500;
     };
     document.getElementById('homePrograms').innerHTML = html;
 }
 
 const fullPrograms = () => {
     let html = '';
+    let delay = 500;
     programs.forEach(index => {
         html += `
-        <div class="m-3 card" style="max-width: 25rem;" onclick="location.href='${index.page}'">
-            <div class="card-body text-center">
-                <h5 class="card-title">${index.title}</h5>
-                <p class="mt-3 instructor text-center">${index.instructor}</p>
+        <div>
+            <div class="m-3 card hoverCard" style="max-width: 30rem;" onclick="location.href='${index.page}'">
+                <div class="card-body text-center">
+                    <h5 class="card-title">${index.title}</h5>
+                    <p class="mt-3 instructor text-center">${index.instructor}</p>
+                </div>
+                <img src="${index.image}" class="card-img" alt="">
             </div>
-            <img src="${index.image}" class="card-img" alt="">
         </div>`
     });
     document.getElementById('fullPrograms').innerHTML = html;
@@ -60,6 +66,24 @@ const coursePage = (course) => {
     document.getElementById('courseDescription').innerHTML = html2;
 }
 
+const courseLeftPage = (course) => {
+    var courseInfo = programs[course];
+
+    let html2 = `
+        <div class="m-3 card" style="max-width: 100%; position: relative; z-index:1; top: 70px;">
+            <img src="${courseInfo.image}" class="card-img" alt="">
+        </div>
+        <div class="m-3 card" style="min-width: 100%;">
+            <div class="card-body">
+                <h2 class="mt-5 mx-3 card-title">${courseInfo.title}</h2>
+                <p class="mt-3 p-4 card-text">
+                ${courseInfo.description}
+                </p>
+            </div>
+        </div>`;
+    document.getElementById('courseDescription').innerHTML = html2;
+}
+
 const fullModuleList = (course) => {
     let html = '';
     programs[course].modules.forEach(index => {
@@ -74,16 +98,17 @@ const fullModuleList = (course) => {
 
 const instructorsList = () => {
     let html = '';
+    let delay = 500;
     team.forEach(index => {
         if (index.teacher == 'True') {
             html += `
-            <div class="m-2 d-flex flex-column">
+            <div class="m-2 d-flex flex-column" data-aos="fade-up" data-aos-delay="${delay}">
                 <img src="${index.image}" alt="">
                 <p class="mt-2 name">${index.name}</p>
                 <p class="role">${index.role}</p>
             </div>`
+            delay += 500;
         }
-        
     });
     document.getElementById('instructorList').innerHTML = html;
 }

@@ -40,7 +40,8 @@ var programs = [
             'Module 8.4 - Tips on how to ace interviews',
             'Module 8.5 - Discovery Calls: What are they and how to handle them',
             'Module 8.6 - Choosing a client & when to turn them down',
-            'Module 8.7 - Onboarding a client]'],
+            'Module 8.7 - Onboarding a client'
+        ],
         'description': `Tired of your 9-5 job? Is the exhaustion of commuting of driving to work already stressing you out? Do you want, for once, to be able to get-togethers with your friends without them having to worry about your work schedule? Is your dream to be able to spend time with your kids more as they are growing up? 
         <br><br>
         If you can relate to these questions, then this course is for you!
@@ -57,8 +58,8 @@ var programs = [
         'instructor':'Ysabelle David',
         'image':'assets/img/Programs/SoftSkills.png',
         'page':'Programs_SoftSkills.html',
-        'modules': [
-            'Module 1: Email Marketing',
+        'modules': 
+            ['Module 1: Email Marketing',
             'Module 2: Customer Service',
             'Module 3: Social Media Management',
             'Module 4: Copywriting',
@@ -68,7 +69,7 @@ var programs = [
             'Module 8: E-commerce',
             'Module 9: SEO',
             'Module 10: Project Management',
-            'Module 11: CRM/CMS Building',],
+            'Module 11: CRM/CMS Building'],
         'description': `
         These days, there are so many online courses that focuses on technical skills, and hard skills. And while those are obviously amazing things to learn and develop, what most of us don't realize is our attitude and personality can be trained to be better too. 
         <br><br>
@@ -80,7 +81,7 @@ var programs = [
         'title':'Virtual Assistant Specifics',
         'instructor':'Ysabelle David',
         'image':'assets/img/Programs/VASpecifics.png',
-        'page':'error.html',
+        'page':'comingsoon.html',
         'modules': [],
         'description': `
         These days, there are so many online courses that focuses on technical skills, and hard skills. And while those are obviously amazing things to learn and develop, what most of us don't realize is our attitude and personality can be trained to be better too. 
@@ -93,7 +94,7 @@ var programs = [
         'title':'Language: English for Filipinos',
         'instructor':'Ysabelle David',
         'image':'assets/img/Programs/LanguageforFils.png',
-        'page':'error.html',
+        'page':'comingsoon.html',
         'modules': [],
         'description': ``,
     },

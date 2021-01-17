@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VirtualSwitchr | Soft Skills</title>
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/Orange 36x.png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -32,7 +33,7 @@
                         <a class="nav-link" href="programs.html">Our Programs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html#team">The Team</a>
+                        <a class="nav-link" href="team.html">The Team</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#contact">Contact Us</a>
@@ -46,6 +47,36 @@
             <div id="courseDescription" class="col-md-7 d-flex flex-column justify-content-start align-items-center text-center">
             </div>
             <div id="courseImgList" class="col-md-5">
+                <div class="m-3 card" style="max-width: 100%;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <a class="hoverText" data-bs-toggle="collapse" href="#moduleCollape" role="button" aria-expanded="false" aria-controls="moduleCollape" 
+                            style="color: #01132B; text-decoration: none;">Course Modules:</a>
+                            <div class="d-flex align-items-center">
+                                <p>&#8369;899</p>
+                                <button disabled class="ms-2 btn cartBtn lh-sm">
+                                    <b>+&nbsp;</b>
+                                    <i class="fas fa-shopping-cart" style="transform: rotateY(180deg);"></i>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="moduleCollape" class="collapse px-4 card-footer lh-lg">
+                        <p>
+                            &#9634;&nbsp;&nbsp;&nbsp;&nbsp;Module 1: Email Marketing<br>
+                            &#9634;&nbsp;&nbsp;&nbsp;&nbsp;Module 2: Customer Service <br>
+                            &#9634;&nbsp;&nbsp;&nbsp;&nbsp;Module 3: Social Media Management<br>
+                            &#9634;&nbsp;&nbsp;&nbsp;&nbsp;Module 4: Copywriting<br>
+                            &#9634;&nbsp;&nbsp;&nbsp;&nbsp;Module 5: FB ads<br>
+                            &#9634;&nbsp;&nbsp;&nbsp;&nbsp;Module 6: Lead Generation<br>
+                            &#9634;&nbsp;&nbsp;&nbsp;&nbsp;Module 7: Photo & Video Editing<br>
+                            &#9634;&nbsp;&nbsp;&nbsp;&nbsp;Module 8: E-commerce<br>
+                            &#9634;&nbsp;&nbsp;&nbsp;&nbsp;Module 9: SEO<br>
+                            &#9634;&nbsp;&nbsp;&nbsp;&nbsp;Module 10: Project Management<br>
+                            &#9634;&nbsp;&nbsp;&nbsp;&nbsp;Module 11: CRM/CMS Building</p>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="p-5 row d-flex justify-content-center text-center">
@@ -56,7 +87,7 @@
     <script src="programs.js"></script>
     <script src="script.js"></script>
     <script>
-        coursePage(1);
+        courseLeftPage(1);
     </script>
 </body>
 </html>

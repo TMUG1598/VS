@@ -45,7 +45,7 @@ a.nav-link .active {
 }
 
 .cover {
-    min-height: 90vh;
+    min-height: 85vh;
 }
 
 .logo {
@@ -134,6 +134,7 @@ button.moreProg {
 
 .footer {
     background-color: #01132B;
+    height: 50px;
 }
 
 .footer .nav-link {
@@ -141,6 +142,13 @@ button.moreProg {
     font-size: 20px;
     color: #FFB84E !important;
 }
+
+.footer i {
+    font-size: 20px;
+    color: #FFB84E !important;
+}
+
+
 
 p.text {
     font-size: 16px;
@@ -153,6 +161,39 @@ p.text {
 
 .errorText {
     font-family: 'Passion One', cursive;
+}
+
+button.bonusBtn {
+    background-color: #01132B;
+    font-size: small;
+    font-weight: bold;
+    color: #FFB84E;
+    width: 150px;
+    text-decoration: underline;
+}
+
+button.cartBtn {
+    background-color: #FFB84E;
+    font-size: small;
+    font-weight: bold;
+    color: #01132B;
+    width: 60px;
+    text-decoration: none;
+}
+
+a.hoverText:hover {
+    text-decoration: underline !important;
+}
+
+.hoverCard:hover {
+    box-shadow: 0 10px 30px 0 #01132b86;
+    cursor: pointer;
+    transition: linear 0.3s !important;
+}
+
+i:hover {
+    color: #FFB84E !important;
+    transition: linear 0.2s;
 }
 
 /* font-family: 'Assistant', sans-serif;
