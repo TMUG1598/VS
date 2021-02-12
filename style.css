@@ -122,7 +122,7 @@ button.moreProg {
     font-weight: 400;
 }
 
-#contact i, i.fa-home {
+#contact-us i, i.fa-home {
     font-size: 30px;
     color: #01132B;
 }
@@ -193,6 +193,37 @@ a.hoverText:hover {
 i:hover {
     color: #FFB84E !important;
     transition: linear 0.2s;
+}
+
+.prog-img {
+    max-width: 25rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.prog-info {
+    max-width: 30rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    z-index: -1;
+    margin-top: -8rem;
+    padding-top: 10rem;
+}
+.prog-card {
+    max-width: 30rem;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.feature {
+    max-width: 20rem;
+}
+
+.signupBtn {
+    background-color: #01132B;
+    color: #FFB84E;
+    text-decoration: none;
 }
 
 /* font-family: 'Assistant', sans-serif;
