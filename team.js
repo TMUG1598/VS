@@ -43,7 +43,7 @@ var team = [
     {
         'name': 'Stef Arellano-Rañosa',
         'role': 'Ads Specialist',
-        'teacher': 'True',
+        'teacher': 'False',
         'image': 'assets/img/VSr Team Photos/Stef Arellano-Rañosa.jpg',
         'socials': [
             {'fb': 'https://www.facebook.com/S.Dawn.A.Ranosa/'},
@@ -52,19 +52,6 @@ var team = [
         ],
         'site': '',
         'description': `Customer Service Champion. Social Media Manager. Mother of Cats.🐱`,
-    },
-    {
-        'name': 'Ja Casanova-Garrido',
-        'role': 'SEO Specialist',
-        'teacher': 'True',
-        'image': 'assets/img/VSr Team Photos/Ja Casanova-Garrido.jpg',
-        'socials': [
-            {'fb': 'https://www.facebook.com/janine.casanova'},
-            {'ig': ''},
-            {'in': ''},
-        ],
-        'site': '',
-        'description': `A mom of 2 boys. Passionate and dedicated. Loves travel, have fun and collect memories with her family and friends. Was a BPO employee for 10 years combined. Also a Car Sales agent. Now practicing skills in SEO. `,
     },
     {
         'name': 'Tatyana Gonzaga',
@@ -78,19 +65,6 @@ var team = [
         ],
         'site': 'https://www.linkedin.com/in/tatyanagonzaga/',
         'description': `I code for a living, but mostly for marketing. I brew coffee at home like a professional. I care for plants like they are my babies.`,
-    },
-    {
-        'name': 'RJ Garrido',
-        'role': 'Video Editor',
-        'teacher': 'False',
-        'image': 'assets/img/VSr Team Photos/RJ Garrido.jpg',
-        'socials': [
-            {'fb': 'https://www.facebook.com/arjae.garrido'},
-            {'ig': ''},
-            {'in': ''},
-        ],
-        'site': '',
-        'description': `Former Starbucks Barista, Front Desk Officer turned Video Editor. A father of 2 and an aspiring "plantito". `,
     },
     {
         'name': 'Jan Rey Cerdeña',

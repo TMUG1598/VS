@@ -36,48 +36,62 @@ const fullPrograms = () => {
     document.getElementById('fullPrograms').innerHTML = html;
 }
 
-const coursePage = (course) => {
-    var courseInfo = programs[course];
-    let html1 = `
-        <div class="m-3 card" style="max-width: 100%;">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Course Modules:</li>
-            </ul>
-            <div class="card-footer">
-                <p id="moduleList" class="px-2 card-text">
-                    ${fullModuleList(course)}
-                </p>
-            </div>
-        </div>`;
-    document.getElementById('courseImgList').innerHTML = html1;
+// const coursePage = (course) => {
+//     var courseInfo = programs[course];
+//     let html1 = `
+//         <div class="m-3 card" style="max-width: 100%;">
+//             <ul class="list-group list-group-flush">
+//                 <li class="list-group-item">Course Modules:</li>
+//             </ul>
+//             <div class="card-footer">
+//                 <p id="moduleList" class="px-2 card-text">
+//                     ${fullModuleList(course)}
+//                 </p>
+//             </div>
+//         </div>`;
+//     document.getElementById('courseImgList').innerHTML = html1;
 
-    let html2 = `
-        <div class="m-3 card" style="max-width: 100%; position: relative; z-index:1; top: 70px;">
-            <img src="${courseInfo.image}" class="card-img" alt="">
-        </div>
-        <div class="m-3 card" style="min-width: 100%;">
-            <div class="card-body">
-                <h2 class="mt-5 mx-3 card-title">${courseInfo.title}</h2>
-                <p class="mt-3 p-4 card-text">
-                ${courseInfo.description}
-                </p>
-            </div>
-        </div>`;
-    document.getElementById('courseDescription').innerHTML = html2;
-}
+//     let html2 = `
+//         <div class="m-3 prog-card">
+//             <div class="mx-auto prog-img">
+//                 <img src="${courseInfo.image}" class="card-img-top" alt="">
+//             </div>
+//             <div class="px-4 pb-3 prog-info">
+//                 <h5 class="card-title">
+//                 ${courseInfo.title}
+//                 </h5>
+//                 <p class="card-text" style="text-align: left;">
+//                 ${courseInfo.description}
+//                 </p>
+//                 <p class="pt-4 instructor">
+//                     <span style="font-size: smaller;">INSTRUCTORS</span>
+//                         <br>
+//                     ${courseInfo.instructor}
+//                 </p>
+//             </div>
+//         </div>`;
+//     document.getElementById('courseDescription').innerHTML = html2;
+// }
 
 const courseLeftPage = (course) => {
     var courseInfo = programs[course];
 
     let html2 = `
-        <div class="m-3 card" style="max-width: 100%; position: relative; z-index:1; top: 70px;">
-            <img src="${courseInfo.image}" class="card-img" alt="">
-        </div>
-        <div class="m-3 card" style="min-width: 100%;">
-            <div class="card-body">
-                <h2 class="mt-5 mx-3 card-title">${courseInfo.title}</h2>
-                <p class="mt-3 p-4 card-text">
+        <div class="m-3 prog-card" style="max-width: 100% !important;">
+            <div class="mx-auto prog-img" style="max-width: 30rem !important;">
+                <img src="${courseInfo.image}" class="card-img-top" alt="">
+            </div>
+            <div class="px-4 pb-3 prog-info" style="max-width: 100% !important;">
+                <h5 class="card-title">
+                ${courseInfo.title}
+                </h5>
+                <p class="card-text" style="text-align: left;">
                 ${courseInfo.description}
+                </p>
+                <p class="pt-4 instructor">
+                    <span style="font-size: smaller;">INSTRUCTORS</span>
+                        <br>
+                    ${courseInfo.instructor}
                 </p>
             </div>
         </div>`;
@@ -117,11 +131,11 @@ const fullTeam = () => {
     let html = '';
     team.forEach(index => {
         html += `
-        <div class="d-flex flex-column align-items-center text-center">
-            <div class="d-flex justify-content-center" style="position: relative; z-index:1; top: 100px;">
+        <div class="m-3 d-flex flex-column align-items-center text-center">
+            <div class="d-flex justify-content-center">
                 <img src="${index.image}" alt="" style="max-width: 200px">
             </div>
-            <div class="mx-3 px-3 card" style="max-width: 350px; padding-top: 100px;">
+            <div class="mx-3 px-3 card" style="max-width: 350px; padding-top: 125px; position: relative; z-index: -1; margin-top: -125px;">
                 <div class="card-body d-flex flex-column justify-content-start align-items-center text-center">
                     <p class="name">${index.name}</p>
                     <p class="role">${index.role}</p><br/>
