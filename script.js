@@ -133,7 +133,7 @@ const fullTeam = () => {
         html += `
         <div class="m-3 d-flex flex-column align-items-center text-center">
             <div class="d-flex justify-content-center">
-                <img src="${index.image}" alt="" style="max-width: 200px">
+                <img src="${index.image}" alt="${index.name}" style="max-width: 200px">
             </div>
             <div class="mx-3 px-3 card" style="max-width: 350px; padding-top: 125px; position: relative; z-index: -1; margin-top: -125px;">
                 <div class="card-body d-flex flex-column justify-content-start align-items-center text-center">
@@ -143,21 +143,20 @@ const fullTeam = () => {
                     <div class="w-100 p-3 socials" style="border-top: 2px solid #01132B;">
                         ${checkSocial(index)}
                     </div>
-                    <p class="personalSite">${index.site}</p>
+                    <a href="${index.site}" target="_blank" class="personalSite">${index.site}</a>
                 </div>
             </div>
         </div>
         `
+        // console.log(checkSocial(index));
     });
     document.getElementById('teamList').innerHTML = html;
 }
 
 const checkSocial = (person) => {
-    let html = '';
+    let html = ``;
     if (person.socials[0].fb != '') {
-        html += `<a href="${person.socials[0].fb}" target="_blank" 
-        rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
-        `;
+        html += `<a href="${person.socials[0].fb}" target="_blank"><i class="fab fa-facebook-square" onclick="location.href='${person.socials[0].fb}'"></i></a> `;
     }
     if (person.socials[1].ig != '') {
     html += `<a href="${person.socials[1].ig}" target="_blank" 
@@ -169,6 +168,6 @@ const checkSocial = (person) => {
         rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
         `;
     }
-    console.log(person.socials[0].fb);
+    // console.log(person.socials[0].fb);
     return html;
 }
