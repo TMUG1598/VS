@@ -241,6 +241,10 @@ i:hover {
     margin: 0 auto;
 }
 
+.team-card {
+    cursor: pointer;
+}
+
 /* font-family: 'Assistant', sans-serif;
 font-family: 'Bebas Neue', cursive;
 font-family: 'Changa', sans-serif;

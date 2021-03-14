@@ -130,7 +130,7 @@ const fullTeam = () => {
     let html = '';
     team.forEach(index => {
         html += `
-        <div class="m-3 d-flex flex-column align-items-center text-center" onclick="location.href='${index.site}'">
+        <div class="team-card m-3 d-flex flex-column align-items-center text-center" onclick="location.href='${index.site}'">
             <div class="d-flex justify-content-center">
                 <img src="${index.image}" alt="${index.name}" style="max-width: 200px; box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.3);">
             </div>
