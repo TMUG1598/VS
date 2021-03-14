@@ -3,7 +3,7 @@ var team = [
         'name': 'Ysabelle David',
         'role': 'CEO & COO',
         'teacher': 'True',
-        'image': 'assets/img/VSr Team Photos/Ysabelle David.jpg',
+        'image': 'assets/img/VSr Team Photos/Ysabelle David.png',
         'socials': [
             {'fb': 'https://www.facebook.com/ysabelledavid1005'},
             {'ig': 'https://www.instagram.com/iamysabelle.d/'},
