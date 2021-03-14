@@ -3,7 +3,7 @@ var programs = [
         'title':'Virtual Assistant Jumpstart',
         'instructor':'Ysabelle David & Junnette Cerdeña',
         'image':'assets/img/Programs/VABasics.png',
-        'page':'Programs_VAJumpstart.html',
+        'page':'VAJumpstart.html',
         'description': `
         If you’re tired of working your regular 7-7 job and want to spend more time at home with your family, then a Virtual Assistant career path is for you!
         <br><br>
@@ -16,7 +16,7 @@ var programs = [
     //     'title':'Soft Skills: Become a Better Human',
     //     'instructor':'Ysabelle David & Junnette Cerdeña',
     //     'image':'assets/img/Programs/SoftSkills.png',
-    //     'page':'Programs_SoftSkills.html',
+    //     'page':'SoftSkills.html',
     //     'modules': 
     //         ['Module 1: Email Marketing',
     //         'Module 2: Customer Service',
@@ -40,7 +40,7 @@ var programs = [
         'title':'VA Accelerator',
         'instructor':'Ysabelle David & Junnette Cerdeña',
         'image':'assets/img/Programs/VASpecifics.png',
-        'page':'Programs_VAAccelerator.html',
+        'page':'VAAccelerator.html',
         'description': `
         After learning what it means to become a Virtual Assistant, and learning the basics, we will go through everything else that you would need to officially become a well-earning Virtual Assistant. 
         <br><br>
