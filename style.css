@@ -61,6 +61,11 @@ a.nav-link .active {
     max-width: 700px;
     font-family: 'Assistant', sans-serif;
     font-size: 18px;
+    line-height: 26px;
+}
+
+.subtitle a {
+    color: #01132B !important;
 }
 
 .header {
@@ -154,6 +159,10 @@ p.text {
     font-family: 'Assistant', sans-serif;
 }
 
+.text a {
+    color: #01132B !important;
+}
+
 .card-footer {
     background-color: #ECF3F5 !important;
 }
@@ -224,6 +233,12 @@ i:hover {
     background-color: #01132B;
     color: #FFB84E;
     text-decoration: none;
+}
+
+.feature-img {
+    width: 150px;
+    height: 120px;
+    margin: 0 auto;
 }
 
 /* font-family: 'Assistant', sans-serif;

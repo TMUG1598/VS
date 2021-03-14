@@ -5,8 +5,7 @@ const progsOnHome = () => {
     let delay = 500;
     for (let index = 0; index < 4; index++) {
         html += `
-        <div class="m-4 card hoverCard" data-aos="fade-up" data-aos-delay="${delay}" style="max-width: 25rem;" onclick="location.href='${programs[index].page}'
-        ">
+        <div class="m-4 card hoverCard" data-aos="fade-up" data-aos-delay="${delay}" style="max-width: 25rem;" onclick="location.href='${programs[index].page}'">
             <img src="${programs[index].image}" class="card-img-top" alt="">
             <div class="card-body text-center">
                 <h5 class="card-title">${programs[index].title}</h5>
@@ -79,15 +78,15 @@ const courseLeftPage = (course) => {
     let html2 = `
         <div class="m-3 prog-card" style="max-width: 100% !important;">
             <div class="mx-auto prog-img" style="max-width: 30rem !important;">
-                <img src="${courseInfo.image}" class="card-img-top" alt="">
+                <img src="${courseInfo.image}" class="card-img-top" alt="${courseInfo.title} ${courseInfo.instructor}">
             </div>
             <div class="px-4 pb-3 prog-info" style="max-width: 100% !important;">
-                <h5 class="card-title">
+                <h3 class="mb-3 card-title">
                 ${courseInfo.title}
-                </h5>
-                <p class="card-text" style="text-align: left;">
+                </h3>
+                <h6 class="card-text" style="text-align: left; font-weight:normal;">
                 ${courseInfo.description}
-                </p>
+                </h6>
                 <p class="pt-4 instructor">
                     <span style="font-size: smaller;">INSTRUCTORS</span>
                         <br>
@@ -131,19 +130,19 @@ const fullTeam = () => {
     let html = '';
     team.forEach(index => {
         html += `
-        <div class="m-3 d-flex flex-column align-items-center text-center">
+        <div class="m-3 d-flex flex-column align-items-center text-center" onclick="location.href='${index.site}'">
             <div class="d-flex justify-content-center">
-                <img src="${index.image}" alt="" style="max-width: 200px">
+                <img src="${index.image}" alt="${index.name}" style="max-width: 200px; box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.3);">
             </div>
             <div class="mx-3 px-3 card" style="max-width: 350px; padding-top: 125px; position: relative; z-index: -1; margin-top: -125px;">
                 <div class="card-body d-flex flex-column justify-content-start align-items-center text-center">
                     <p class="name">${index.name}</p>
                     <p class="role">${index.role}</p><br/>
-                    <p class="description">${index.description}</p><br>
-                    <div class="w-100 p-3 socials" style="border-top: 2px solid #01132B;">
-                        ${checkSocial(index)}
+                    <div style="min-height: 100px;">
+                    <p class="description">${index.description}</p></div>
+                    <div class="w-100 px-3 pt-3 socials" style="border-top: 2px solid #01132B;">
                     </div>
-                    <p class="personalSite">${index.site}</p>
+                    <a href="${index.site}" target="_blank" class="p-1 personalSite">${index.site}</a>
                 </div>
             </div>
         </div>
@@ -152,12 +151,35 @@ const fullTeam = () => {
     document.getElementById('teamList').innerHTML = html;
 }
 
+// const fullTeam = () => {
+//     let html = '';
+//     team.forEach(index => {
+//         html += `
+//         <div class="m-3 d-flex flex-column align-items-center text-center" onclick="location.href='${index.site}'">
+//             <div class="d-flex justify-content-center">
+//                 <img src="${index.image}" alt="${index.name}" style="max-width: 200px">
+//             </div>
+//             <div class="mx-3 px-3 card" style="max-width: 350px; padding-top: 125px; position: relative; z-index: -1; margin-top: -125px;">
+//                 <div class="card-body d-flex flex-column justify-content-start align-items-center text-center">
+//                     <p class="name">${index.name}</p>
+//                     <p class="role">${index.role}</p><br/>
+//                     <p class="description">${index.description}</p><br>
+//                     <div class="w-100 p-3 socials" style="border-top: 2px solid #01132B;">
+//                         ${checkSocial(index)}
+//                     </div>
+//                     <a href="${index.site}" target="_blank" class="personalSite">${index.site}</a>
+//                 </div>
+//             </div>
+//         </div>
+//         `
+//     });
+//     document.getElementById('teamList').innerHTML = html;
+// }
+
 const checkSocial = (person) => {
-    let html = '';
+    let html = ``;
     if (person.socials[0].fb != '') {
-        html += `<a href="${person.socials[0].fb}" target="_blank" 
-        rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
-        `;
+        html += `<a href="${person.socials[0].fb}" target="_blank"><i class="fab fa-facebook-square" onclick="location.href='${person.socials[0].fb}'"></i></a> `;
     }
     if (person.socials[1].ig != '') {
     html += `<a href="${person.socials[1].ig}" target="_blank" 
@@ -169,6 +191,6 @@ const checkSocial = (person) => {
         rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
         `;
     }
-    console.log(person.socials[0].fb);
+    // console.log(person.socials[0].fb);
     return html;
 }

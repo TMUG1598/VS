@@ -37,7 +37,7 @@ var team = [
             {'ig': 'https://instagram.com/akosikrishma?igshid=jkfdn5h4l4cg'},
             {'in': 'https://twitter.com/akosikrishma'},
         ],
-        'site': '',
+        'site': 'https://www.facebook.com/akosikrishma',
         'description': `Got tired of my 12-hour shifts, and decided to make the switch. 🤘🏻 Functioning well when caffeinated. Financial literacy advocate. I probably enjoy memes more than the average person. `,
     },
     {
@@ -50,7 +50,7 @@ var team = [
             {'ig': 'https://www.instagram.com/s.dawn.21/'},
             {'in': 'https://www.linkedin.com/in/stephanie-dawn-arellano-ra%C3%B1osa-a2b03bba/'},
         ],
-        'site': '',
+        'site': 'https://www.linkedin.com/in/stephanie-dawn-arellano-ra%C3%B1osa-a2b03bba/',
         'description': `Customer Service Champion. Social Media Manager. Mother of Cats.🐱`,
     },
     {
