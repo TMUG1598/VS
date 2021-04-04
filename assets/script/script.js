@@ -25,7 +25,7 @@ const fullPrograms = () => {
         <div>
             <div class="m-3 card hoverCard" style="max-width: 30rem;" onclick="location.href='${index.page}'">
                 <div class="card-body text-center">
-                    <h5 class="card-title">${index.title}</h5>
+                    <h1 class="card-title" style="font-size: 30px;">${index.title}</h1>
                     <p class="mt-3 instructor text-center">${index.instructor}</p>
                 </div>
                 <img src="${index.image}" class="card-img" alt="">
@@ -34,43 +34,6 @@ const fullPrograms = () => {
     });
     document.getElementById('fullPrograms').innerHTML = html;
 }
-
-// const coursePage = (course) => {
-//     var courseInfo = programs[course];
-//     let html1 = `
-//         <div class="m-3 card" style="max-width: 100%;">
-//             <ul class="list-group list-group-flush">
-//                 <li class="list-group-item">Course Modules:</li>
-//             </ul>
-//             <div class="card-footer">
-//                 <p id="moduleList" class="px-2 card-text">
-//                     ${fullModuleList(course)}
-//                 </p>
-//             </div>
-//         </div>`;
-//     document.getElementById('courseImgList').innerHTML = html1;
-
-//     let html2 = `
-//         <div class="m-3 prog-card">
-//             <div class="mx-auto prog-img">
-//                 <img src="${courseInfo.image}" class="card-img-top" alt="">
-//             </div>
-//             <div class="px-4 pb-3 prog-info">
-//                 <h5 class="card-title">
-//                 ${courseInfo.title}
-//                 </h5>
-//                 <p class="card-text" style="text-align: left;">
-//                 ${courseInfo.description}
-//                 </p>
-//                 <p class="pt-4 instructor">
-//                     <span style="font-size: smaller;">INSTRUCTORS</span>
-//                         <br>
-//                     ${courseInfo.instructor}
-//                 </p>
-//             </div>
-//         </div>`;
-//     document.getElementById('courseDescription').innerHTML = html2;
-// }
 
 const courseLeftPage = (course) => {
     var courseInfo = programs[course];
@@ -81,9 +44,9 @@ const courseLeftPage = (course) => {
                 <img src="${courseInfo.image}" class="card-img-top" alt="${courseInfo.title} ${courseInfo.instructor}">
             </div>
             <div class="px-4 pb-3 prog-info" style="max-width: 100% !important;">
-                <h3 class="mb-3 card-title">
+                <h1 class="mb-3 card-title" style="font-size: 30px;">
                 ${courseInfo.title}
-                </h3>
+                </h1>
                 <h6 class="card-text" style="text-align: left; font-weight:normal;">
                 ${courseInfo.description}
                 </h6>
@@ -115,7 +78,7 @@ const instructorsList = () => {
     team.forEach(index => {
         if (index.teacher == 'True') {
             html += `
-            <div class="m-2 d-flex flex-column" data-aos="fade-up" data-aos-delay="${delay}">
+            <div class="my-2 mx-4 d-flex flex-column" data-aos="fade-up" data-aos-delay="${delay}">
                 <img src="${index.image}" alt="">
                 <p class="mt-2 name">${index.name}</p>
                 <p class="role">${index.role}</p>

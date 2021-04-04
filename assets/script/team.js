@@ -29,7 +29,7 @@ var team = [
     },
     {
         'name': 'Krishma Kishore',
-        'role': 'Customer Support',
+        'role': 'Customer Support & Social Media Manager',
         'teacher': 'False',
         'image': 'assets/img/VSr Team Photos/Maki Kishore.jpg',
         'socials': [
