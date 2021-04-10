@@ -54,19 +54,6 @@ var team = [
         'description': `Customer Service Champion. Social Media Manager. Mother of Cats.🐱`,
     },
     {
-        'name': 'Tatyana Gonzaga',
-        'role': 'Web Developer',
-        'teacher': 'False',
-        'image': 'assets/img/VSr Team Photos/Tatyana Gonzaga.JPG',
-        'socials': [
-            {'fb': ''},
-            {'ig': 'https://www.instagram.com/tatyana.gonzaga/'},
-            {'in': ''},
-        ],
-        'site': 'https://www.linkedin.com/in/tatyanagonzaga/',
-        'description': `I code for a living, but mostly for marketing. I brew coffee at home like a professional. I care for plants like they are my babies.`,
-    },
-    {
         'name': 'Jan Rey Cerdeña',
         'role': 'Graphic Designer',
         'teacher': 'False',
